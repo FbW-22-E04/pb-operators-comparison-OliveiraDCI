@@ -50,21 +50,21 @@ console.log(apples - mangoes < oranges / mangoes);
 
 // 8
 console.log("8. Check whether mangoes, apples and oranges are equal.");
-console.log(mangoes && apples === oranges);
+console.log(mangoes === apples && apples === oranges);
 
 // 9
 console.log(
   "9. Check whether the remainder of apples divided by mangoes and the remainder of oranges divided by mangoes are equal."
 );
-const remainderApples = apples / mangoes;
-const remainderOranges = oranges / mangoes;
+const remainderApples = apples % mangoes;
+const remainderOranges = oranges % mangoes;
 console.log(remainderApples === remainderOranges);
 
 // 10
 console.log(
   "10. Check whether mangoes added to apples is greater than oranges minus mangoes. If it is not, find an operator which will give a result of true."
 );
-console.log(mangoes + apples >= oranges - mangoes);
+console.log(mangoes + apples <= oranges - mangoes);
 
 // 11
 console.log("11. BONUS CHALLENGE: add question headings to outputs");
